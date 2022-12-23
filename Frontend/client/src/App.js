@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Calender, Home, Profile } from "./pages";
+import { Calender, Home, Login, Profile, Signup } from "./pages";
 
 function App() {
   return (
@@ -9,6 +9,8 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/calender" element={<Calender />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   );
